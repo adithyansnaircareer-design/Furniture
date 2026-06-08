@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+}
+
+body {
+
+    background-color: beige;
+    color: #333;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;        
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+/* brand style */
+.brand {
+    text-decoration: none;
+    font-size: 30px;
+    color: #964B00;
+    font-weight: 500;
+
+}
+
+/* to hide checkbox */
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+
+/* to display links single */
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+/* giving stle to links */
+.link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 1s;
+}
+
+/* to give hower effect */
+/* pseudo class special effect */
+.link:hover {
+    color: #964B00;
+}
+
+.hero {
+    display: flex;
+    padding: 160px 8%;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.herotext {
+    flex: 1;
+    animation: fadein 1.5s ease;
+
+}
+
+#herotitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+#heropara {
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.herobutton {
+    padding: 12px 25px;
+    border: none;
+    background-color: #964B00;
+    color: #f5f5f5;
+    border-radius: 8px;
+    /* to change the cursor for the buttons */
+    cursor: pointer;
+    /* to delay the change when hovered */
+    transition: 0.3s;
+    animation: fadein 1.5s ease;
+
+}
+
+.herobutton:hover {
+    background-color: black;
+    /* for increaseing the size when hoverd */
+    transform: scale(1.05);
+}
+
+
+.heroimage {
+    flex: 1;
+    animation: blink 1.5s ease;
+
+}
+
+#furnitureimage {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.products {
+    padding: 0px 8% 60px 8%;
+    text-align: center;
+
+}
+
+.producthead {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.productcontainer {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-30px);
+
+}
+
+.cardimg {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    /* to correctly fit the image on the card */
+    object-fit: cover;
+}
+
+.productname {
+    margin: 15px 0 10px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.banner {
+    margin  : 0px 8% 60px 8%;
+    padding: 0px 40px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./image/Modern\ Aesthetic\ Living\ Space\ with\ Artistic\ Focus.png) ;
+    color: white;
+    line-height: 1.5;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px;
+    background-attachment: fixed;
+   
+    
+    
+
+}
+.abouthead{
+    font-size: 30PX;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.aboutpara{
+    font-size: 15PX;
+    margin-bottom: 40px;
+
+}
+
+.aboutbutton{
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #bbac93;
+
+}
+
+.aboutbutton:hover{
+    background-color: #a32b24;
+}
+
+.contact{
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contacthead,.subhead{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #a32b24;
+}
+
+.contactnumber,.contactemail{
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+.contacttext{
+    font-family: "Archivo Black", sans-serif;
+
+
+}
+
+.socialicons{
+    margin-top: 20px;
+}
+
+.smlink{
+    margin-right: 10px;
+    color: #a32b24;
+
+}
+#facebook{
+    color: blue;
+}
+
+.box{
+    display: flex;
+}
+
+.subinput{
+padding: 10px;
+    width: 300px;
+}
+
+.subbutton{
+    background-color: #a32b24;
+    color: white;
+    border: none;
+}
+
+.footer{
+    padding: 15px;
+    background-color: #a32b24;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Animations */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* responsive css */
+@media(max-width:768px) {
+
+    /* style for mobile and tab */
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .brand,
+    .icons {
+        font-size: 25px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    #cancelicon {
+        display: none;
+    }
+
+    #check:checked~.icons #menuicon {
+        display: none;
+    }
+
+    #check:checked~.icons #cancelicon {
+        display: block;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        height: 0px;
+        display: none;
+        /* to give a whitish black for opacity 0.1 */
+        background-color: rgba(0, 0, 0, 0.1);
+        /* to blur the background */
+        backdrop-filter: blur(5px);
+
+    }
+
+    .link {
+        color: white;
+    }
+
+    #check:checked~.navlinks {
+        display: block;
+        height: fit-content;
+    }
+
+    .links {
+        text-align: center;
+        margin: 1.5rem 0px;
+
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #herottitle {
+        font-size: 35px;
+    }
+
+    .banner,.contact{
+        height: fit-content;
+        padding: 20px 8%;
+    }
+
+    
+}
