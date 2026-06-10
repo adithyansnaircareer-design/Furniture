@@ -18,8 +18,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- AOS animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -58,7 +63,7 @@
 
         </div>
         <!-- image content -->
-        <div class="heroimage">
+        <div data-aos="zoom-in" data-aos-duration="3000" class="heroimage">
             <img id="furnitureimage" src="./image/Minimalist Wooden Cabinet.png" alt="no image">
         </div>
     </section>
@@ -69,37 +74,37 @@
         <!-- Product container -->
         <div class="productcontainer">
             <!-- cards 1-->
-            <div class="card">
+            <div   class="card">
                 <!-- image -->
-                 <img class="cardimg" src="./image/Cozy Corner Setup.png" alt="">
+                <img class="cardimg" src="./image/Cozy Corner Setup.png" alt="">
                 <!-- name -->
-                 <h3 class="productname">Cozy Sofa</h3>
+                <h3 class="productname">Cozy Sofa</h3>
                 <!-- price -->
-                 <p class="price">$120</p>
+                <p class="price">$120</p>
                 <!-- button to buy -->
-                 <button class="herobutton">Buy Now</button>
+                <button class="herobutton">Buy Now</button>
             </div>
             <!-- cards 2-->
-             <div class="card">
+            <div class="card">
                 <!-- image -->
-                 <img class="cardimg" src="./image/Modern Armchair with Cosmic Background.png" alt="">
+                <img class="cardimg" src="./image/Modern Armchair with Cosmic Background.png" alt="">
                 <!-- name -->
-                 <h3 class="productname">Stylish Chair</h3>
+                <h3 class="productname">Stylish Chair</h3>
                 <!-- price -->
-                 <p class="price">$160</p>
+                <p class="price">$160</p>
                 <!-- button to buy -->
-                 <button class="herobutton">Buy Now</button>
+                <button class="herobutton">Buy Now</button>
             </div>
             <!-- cards 3-->
-             <div class="card">
+            <div class="card">
                 <!-- image -->
-                 <img class="cardimg" src="./image/Minimalist Sideboard Decor.png" alt="">
+                <img class="cardimg" src="./image/Minimalist Sideboard Decor.png" alt="">
                 <!-- name -->
-                 <h3 class="productname">Almarah</h3>
+                <h3 class="productname">Almarah</h3>
                 <!-- price -->
-                 <p class="price">$450</p>
+                <p class="price">$450</p>
                 <!-- button to buy -->
-                 <button class="herobutton">Buy Now</button>
+                <button class="herobutton">Buy Now</button>
             </div>
 
 
@@ -110,45 +115,57 @@
     <section id="about" class="banner">
         <!-- heading -->
         <h2 class="abouthead">About Us</h2>
-        <p class="aboutpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae neque quod atque asperiores eligendi. Veritatis nobis architecto fuga fugiat cupiditate nesciunt quam, a distinctio in provident perspiciatis laborum, ducimus porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur excepturi saepe modi assumenda voluptatibus laboriosam delectus explicabo id quaerat sed nam maxime ipsam adipisci, alias fugiat voluptas odit obcaecati?</p>
+        <p class="aboutpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae neque quod atque
+            asperiores eligendi. Veritatis nobis architecto fuga fugiat cupiditate nesciunt quam, a distinctio in
+            provident perspiciatis laborum, ducimus porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+            consequuntur excepturi saepe modi assumenda voluptatibus laboriosam delectus explicabo id quaerat sed nam
+            maxime ipsam adipisci, alias fugiat voluptas odit obcaecati?</p>
 
         <button class="herobutton aboutbutton">Lets Talk</button>
 
     </section>
     <!-- footerF  -->
-     <section id="contact" class="contact"> 
-            <!-- contact text -->
-             <div class="contacttext">
-                <h3 class="contacthead">Contact Us</h3>
-                <h4 class="contactnumber">+91-8994747839</h4>
-                <p class="contactemail">info@gmail.com</p>
-                <!-- icons -->
-                 <div class="socialicons">
-                    <a class="smlink" id="facebook" target="_blank"  href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="smlink" target="_blank" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="smlink" target="_blank" href=""><i class="fa-brands fa-pinterest"></i></a>
-                 </div>
-             </div>
-             <!-- subscribe part -->
-              <div class="subscribe">
-                <h3 class="subhead">Join Our Email List</h3>
-                <div class="box">
-                    <input type="text" placeholder="Email" class="subinput">
-                    <button class=" subbutton">Subscribe</button>
-                </div>
-              </div>
-            
-       
-         
-     </section>
-     <!-- footer content -->
-          <footer class="footer">
-            <p> &copy; May 2026 Designed by The GOD, All Rights Reserved</p>
+    <section id="contact" class="contact">
+        <!-- contact text -->
+        <div class="contacttext">
+            <h3 class="contacthead">Contact Us</h3>
+            <h4 class="contactnumber">+91-8994747839</h4>
+            <p class="contactemail">info@gmail.com</p>
+            <!-- icons -->
+            <div class="socialicons">
+                <a class="smlink" id="facebook" target="_blank" href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="smlink" target="_blank" href="https://www.instagram.com/accounts/login/?hl=en"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="smlink" target="_blank" href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <!-- subscribe part -->
+        <div class="subscribe">
+            <h3 class="subhead">Join Our Email List</h3>
+            <div class="box">
+                <input type="text" placeholder="Email" class="subinput">
+                <button class=" subbutton">Subscribe</button>
+            </div>
+        </div>
 
 
-          </footer>
+
+    </section>
+    <!-- footer content -->
+    <footer class="footer">
+        <p> &copy; May 2026 Designed by The GOD, All Rights Reserved</p>
+
+
+    </footer>
 
 
 </body>
+<!-- AOS animations cdn SCRIPT (animation only on block elements) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS initialisation(starting) -->
+<script>
+  AOS.init();
+</script>
 
 </html>
